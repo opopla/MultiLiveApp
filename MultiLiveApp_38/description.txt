@@ -1,0 +1,2 @@
+아이디찾기부분
+xml상에서 nameEditText가 겹치길래 FindId_nameEditText와 SignUp_nameEditText로 각각 바꿔줌

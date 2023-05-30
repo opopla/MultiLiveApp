@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <!--뒤로가기 버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5">
+        <ImageButton
+            android:id="@+id/userInfo_Back_Btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:src="@drawable/left_arrow">
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="9.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="이메일"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_emailText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="비밀번호"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_pwText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <TextView
+                        android:text="이름"
+                        android:textColor="#9549ff"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:gravity="left|bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <TextView
+                        android:id="@+id/userInfo_nameText"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="18sp"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:background="@drawable/text_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <TextView
+                        android:text="성별"
+                        android:textColor="#9549ff"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:gravity="left|bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <TextView
+                        android:id="@+id/userInfo_genderText"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="18sp"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:background="@drawable/text_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="닉네임"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_nickText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="국가"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_countryText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="생년월일"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_birthText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="전화번호"
+                    android:textColor="#9549ff"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:id="@+id/userInfo_phoneText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:background="@drawable/text_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1.5"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text="태그"
+                    android:textColor="#9549ff"
+                    android:textSize="16sp"
+                    android:gravity="left|bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <!-- tag1 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagsport"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag2 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/taganimal"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag3 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/taghumor"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag4 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagstudy"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag5 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagsogae"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                    <!-- tag1 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagsing"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag2 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagcook"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag3 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagdiet"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <!-- tag4 -->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tagmetting"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <Button
+                android:id="@+id/userInfo_checkBtn"
+                android:text="확인"
+                android:layout_margin="10dp"
+                android:background="@drawable/sign_up_btn_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

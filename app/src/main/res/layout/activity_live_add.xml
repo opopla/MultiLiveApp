@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <!--뒤로가기 버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5">
+        <ImageButton
+            android:id="@+id/liveAdd_Back_Btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:src="@drawable/left_arrow">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <!--화면구성-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="8.7">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--라이브 제목 설정-->
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="라이브 제목"
+                        android:textColor="#9549ff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                    <EditText
+                        android:backgroundTint="#a142f5"
+                        android:id="@+id/liveAdd_liveTitle_ET"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/EditTheme"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--라이브 태그 설정-->
+            <LinearLayout
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="3.5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                        <TextView
+                            android:gravity="center|left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:text="라이브 태그 설정"
+                            android:textColor="#9549ff"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                        <LinearLayout
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:src="@drawable/search" />
+
+
+
+                                <EditText
+                                    android:backgroundTint="#a142f5"
+                                    android:id="@+id/liveAdd_searchTag_ET"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:theme="@style/EditTheme"
+                                    />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="5.25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <ListView
+                    android:id="@+id/liveAdd_ListView"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textFilterEnabled="true">
+                </ListView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                <Button
+                    android:id="@+id/liveAdd_liveAdd_Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/login_btn_border"
+                    android:text="라이브 생성"
+                    android:textSize="14dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--하단 버튼-->
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <LinearLayout
+            android:background="@drawable/main_bottom_border"
+            android:backgroundTint="#cdcdcd"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/liveAdd_userInfo_Btn"
+                    android:src="@drawable/user"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageButton>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/liveAdd_setting_Btn"
+                    android:src="@drawable/hamburger"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageButton>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

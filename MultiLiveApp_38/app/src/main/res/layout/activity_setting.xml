@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.multiliveapp.user_info.SettingActivity">
+
+    <!--뒤로가기버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5">
+        <ImageButton
+            android:id="@+id/setting_backBtn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:src="@drawable/left_arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.25"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--사용자 정보-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/UserInfo"
+                android:drawableLeft="@drawable/user"
+                android:paddingLeft="30dp"
+                android:textSize="20dp"
+                android:text="사용자 정보"
+                android:background="@drawable/sign_up_btn_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--팔로우 관리-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <!--좌측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <!--중앙-->
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <Button
+                android:background="@drawable/sign_up_btn_border"
+                android:id="@+id/Follow"
+                android:drawableLeft="@drawable/follow_black"
+                android:paddingLeft="30dp"
+                android:textSize="20dp"
+                android:text="팔로우"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--우측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--태그그 관리-->
+   <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+       <!--좌측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+       <!--중앙-->
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/Tag"
+                android:drawableLeft="@drawable/tag"
+                android:paddingLeft="30dp"
+                android:textSize="20dp"
+                android:text="태그 관리"
+                android:background="@drawable/sign_up_btn_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+       <!--우측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <!--로그아웃 관리-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <!--좌측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <!--중앙-->
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/logout"
+                android:drawableLeft="@drawable/logout"
+                android:paddingLeft="30dp"
+                android:textSize="20dp"
+                android:text="로그아웃"
+                android:background="@drawable/sign_up_btn_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--우측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <!--로그아웃 관리-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/gotoUserDelete"
+                android:drawableLeft="@drawable/close2"
+                android:paddingLeft="30dp"
+                android:textSize="20dp"
+                android:text="회원탈퇴"
+                android:background="@drawable/sign_up_btn_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <!--우측 공백-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!--하단 공백-->
+    <LinearLayout
+        android:layout_weight="1.25"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

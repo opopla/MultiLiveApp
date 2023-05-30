@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/chat_Back_Btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:src="@drawable/left_arrow" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/im1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="8.5">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/colorAccent"
+                android:listSelector="#00000000"
+                android:transcriptMode="alwaysScroll" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_below="@id/im1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <EditText
+                android:backgroundTint="#a142f5"
+                android:theme="@style/EditTheme"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="메세지를 입력하세요"
+                android:inputType="textMultiLine"
+                android:maxLines="4" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <Button
+                android:backgroundTint="#EBDFEE"
+                android:layout_margin="5dp"
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_border"
+                android:text="전송" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

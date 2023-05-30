@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <!--뒤로가기버튼-->
+    <TextView
+        android:id="@+id/tagsport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/taganimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/taghumor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagstudy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagsogae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagcook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagdiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tagmetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/tag_Back_Btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:baselineAligned="false"
+            android:src="@drawable/left_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="9.5"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="태그 관리"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.75"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tag_editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#a142f5"
+                android:hint="태그 검색"
+                android:theme="@style/EditTheme" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="8.75">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/tag_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#999999"
+                    android:dividerHeight="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                </ListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

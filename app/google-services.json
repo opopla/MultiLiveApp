@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "861840818738",
+    "firebase_url": "https://multiliveapp.firebaseio.com",
+    "project_id": "multiliveapp",
+    "storage_bucket": "multiliveapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861840818738:android:d4dda648c9c0519a9df22b",
+        "android_client_info": {
+          "package_name": "com.example.multiliveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861840818738-lmspdhpf8otm7bnmu7ut59ff8ougnp3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.multiliveapp",
+            "certificate_hash": "995c73744192c969eac57075890df15db5639947"
+          }
+        },
+        {
+          "client_id": "861840818738-pvs2hbaucd9vr7fntubvjogd2rdcqia4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWb_ZxvkCtCg0u79WJv3IKosaCmOOtgBE "
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861840818738-pvs2hbaucd9vr7fntubvjogd2rdcqia4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

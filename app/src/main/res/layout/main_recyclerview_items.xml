@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:backgroundTint="#f6f6f6"
+    android:background="@drawable/linear_border"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="12dp"
+    android:id="@+id/rec_item_linear"
+    android:layout_marginRight="12dp">
+
+    <TextView
+        android:id="@+id/mainRecyclerItemRoomNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:background="@drawable/linear_border_rec"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--라이브 타이틀-->
+        <LinearLayout
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:layout_weight="4.25"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.75"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/mainRecyclerfollowBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/un_follow"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text=" "
+                    android:background="@drawable/linear_underline"
+                    android:id="@+id/mainRecyclerItemLiveTitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16dp"
+                    android:gravity="left|bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text=" "
+                    android:id="@+id/mainRecyclerItemUserNickname"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+                <TextView
+                    android:text=" "
+                    android:id="@+id/mainRecyclerItemTag"
+                    android:textSize="14dp"
+                    android:gravity="left|top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.MMLMainActivity">
+
+    <!-- 상단 검색 창-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/edit_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7sp"
+                    android:src="@drawable/search">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <EditText
+                        android:id="@+id/mainEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#a142f5"
+                        android:imeOptions="actionDone"
+                        android:theme="@style/EditTheme">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/mainSearchBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:text="검색" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/mainCategoryLeftBtn"
+                android:background="@android:color/transparent"
+                android:src="@drawable/left_arrow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mainCategoryText"
+                android:text="전체"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/mainCategoryRightBtn"
+                android:background="@android:color/transparent"
+                android:src="@drawable/right_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 카드형태의 라이브 리스트 출력 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="8">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/allchatBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EBDFEE"
+            android:text="전체 채팅방" />
+
+
+    </LinearLayout>
+    <!-- 바텀 액션바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.8">
+
+        <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/mainBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            android:layout_gravity="bottom"
+            tools:menu="@menu/bottom_navigation">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bottom_border"
+            android:backgroundTint="#cdcdcd"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/mainUserInfoBtn"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/mainLiveAddBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/plus">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/mainSettingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hamburger">
+
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hamburger">
+
+                </ImageButton>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    https://lktprogrammer.tistory.com/183-->
+    <!--https://lesslate.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%95%98%EB%8B%A8-%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98(Bottom-Navigation)-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/-->
+
+</LinearLayout>
